@@ -5,6 +5,5 @@ while True:
     for s in sprites:
         clear(); counter += "_"
         if len(counter) % 10 == 0:
-            cl, bc = random.randint(0, 2), random.randint(10, 14)
-            sky1, sky2, sky3, sky4 = (sky1+c11+" "*bc, sky2+c12+" "*bc, sky3+c13+" "*bc, sky4+c14+" "*bc) if cl==1 else ((sky1+c21+" "*bc, sky2+c22+" "*bc, sky3+c23+" "*bc, sky4+c24+" "*bc) if cl==2 else (sky1,sky2,sky3,sky4))
+            cl, bc = random.randint(0, 2), random.randint(10, 14);sky1, sky2, sky3, sky4 = (sky1+c11+" "*bc, sky2+c12+" "*bc, sky3+c13+" "*bc, sky4+c14+" "*bc) if cl==1 else ((sky1+c21+" "*bc, sky2+c22+" "*bc, sky3+c23+" "*bc, sky4+c24+" "*bc) if cl==2 else (sky1,sky2,sky3,sky4))
         truck1, truck2, truck3, s = " "+truck1, " "+truck2, " "+truck3, counter+s;print("\n".join([sky1, sky2, sky3, sky4, truck1, truck2, truck3, s]))
